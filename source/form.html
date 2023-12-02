@@ -3,12 +3,11 @@
 
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cat Energy: Подбор программы</title>
-    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/index.js" defer></script>
   </head>
 
   <body class="page__body">
@@ -35,7 +34,7 @@
                 <a class="main-nav__link" href="catalog.html">Каталог Продукции</a>
               </li>
               <li class="main-nav__list-item main-nav__list-item--active">
-                <a class="main-nav__link" href="about.html">Подбор программы</a>
+                <a class="main-nav__link" href="form.html">Подбор программы</a>
               </li>
             </ul>
           </div>
@@ -50,23 +49,23 @@
       </div>
 
       <form class="feedback-form">
-        <fieldset class="feedback-form__contacts contacts-form">
+        <fieldset class="feedback-form__cat-info cat-info-form">
           <legend class="visually-hidden">Данные про кота</legend>
 
-          <ul class="contacts-form__list contacts-form-list">
-            <li class="contacts-form-list__item">
-              <label class="contacts-form__label form-label" for="catname">Имя:*</label>
-              <input class="contacts-form__input form-input" type="text" id="catname" name="catname" placeholder="Барсик" required>
+          <ul class="cat-info-form__list cat-info-form-list">
+            <li class="cat-info-form-list__item">
+              <label class="cat-info-form__label form-label" for="catname">Имя:*</label>
+              <input class="cat-info-form__input form-input" type="text" id="catname" name="catname" placeholder="Барсик" required>
             </li>
 
-            <li class="contacts-form-list__item">
-              <label class="contacts-form__label form-label" for="catweight">Вес (кг):*</label>
-              <input class="contacts-form__input form-input" type="number" id="catweight" name="catweight" placeholder="7" required>
+            <li class="cat-info-form-list__item">
+              <label class="cat-info-form__label form-label" for="catweight">Вес (кг):*</label>
+              <input class="cat-info-form__input form-input" type="number" id="catweight" name="catweight" placeholder="7" required>
             </li>
 
-            <li class="contacts-form-list__item">
-              <label class="contacts-form__label form-label" for="catage">Возраст (лет)*:</label>
-              <input class="contacts-form__input form-input" type="number" id="catage" name="catage" placeholder="7" required>
+            <li class="cat-info-form-list__item">
+              <label class="cat-info-form__label form-label" for="catage">Возраст (лет)*:</label>
+              <input class="cat-info-form__input form-input" type="number" id="catage" name="catage" placeholder="7" required>
             </li>
           </ul>
         </fieldset>
@@ -76,21 +75,72 @@
 
           <ul class="options-form__list options-form-list">
             <li class="options-form-list__item">
-              <label class="options-form__label-radio form-label-radio form-label" for="weightloss">Похудение</label>
-              <input class="options-form__radio" type="radio" id="weightloss" name="weightloss" checked>
+              <label class="options-form__label-radio form-label-radio form-label" for="weightloss" name="program-options">Похудение</label>
+              <input class="options-form__radio" type="radio" id="weightloss" name="program-options" checked>
             </li>
 
             <li class="options-form-list__item">
-              <label class="options-form__label-radio form-label-radio form-label" for="weightgain">Набор массы</label>
-              <input class="options-form__radio" type="radio" id="weightgain" name="weightgain">
+              <label class="options-form__label-radio form-label-radio form-label" for="weightgain" name="program-options">Набор массы</label>
+              <input class="options-form__radio" type="radio" id="weightgain" name="program-options">
             </li>
 
             <li class="options-form-list__item">
               <label class="options-form__label-radio form-label-radio form-label" for="needhelp">Не знаю (Нужен ваш совет)</label>
-              <input class="options-form__radio" type="radio" id="needhelp" name="needhelp">
+              <input class="options-form__radio" type="radio" id="needhelp" name="program-options">
             </li>
           </ul>
         </fieldset>
+
+        <fieldset class="feedback-form__contacts contacts-form">
+          <legend class="contacts-form__legend form-heading">Контактные данные (владельца кота)</legend>
+
+          <ul class="contacts-form__list contacts-form-list">
+            <li class="contacts-form-list__item">
+              <label class="contacts-form-list__label form-label" for="catname">E-mail:*</label>
+              <input class="contacts-form-list__input form-input form-input--email" type="text" id="email" name="email" placeholder="кuklachev@gmail.com" required>
+            </li>
+
+            <li class="contacts-form-list__item">
+              <label class="contacts-form-list__label form-label" for="phone-number">Телефон:*</label>
+              <input class="contacts-form-list__input form-input form-input--phone" type="text" id="phone-number" name="phone-number" placeholder="8 (960) 900-60-90" required>
+            </li>
+          </ul>
+        </fieldset>
+
+        <div class="feedback-form__additional-info additional-comment">
+          <label class="additional-comment__legend form-heading" for="message">Комментарий</label>
+          <div class="additional-comment__wrapper">
+            <textarea class="additional-comment__textarea form-input" id="message" name="message"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
+        </div>
+
+
+        <fieldset class="feedback-form__options additional-goods">
+          <legend class="additional-goods__legend form-heading">Дополнительно</legend>
+
+          <ul class="additional-goods__list additional-goods-list">
+            <li class="additional-goods-list__item">
+              <label class="feedback-form__label-checkbox form-label-checkbox form-label" for="additional-goods-sugarsubstitute">Сахарозаменитель</label>
+              <input class="feedback-form__checkbox" type="checkbox" id="additional-goods-sugarsubstitute" name="sugarsubstitute">
+            </li>
+
+            <li class="additional-goods-list__item">
+              <label class="feedback-form__label-checkbox form-label-checkbox form-label" for="additional-goods-water">Питьевая вода</label>
+              <input class="feedback-form__checkbox" type="checkbox" id="additional-goods-water" name="water">
+            </li>
+
+            <li class="additional-goods-list__item">
+              <label class="feedback-form__label-checkbox form-label-checkbox form-label" for="additional-goods-milk">Молоко</label>
+              <input class="feedback-form__checkbox" type="checkbox" id="additional-goods-milk" name="milk">
+            </li>
+
+            <li class="additional-goods-list__item">
+              <label class="feedback-form__label-checkbox form-label-checkbox form-label" for="additional-goods-vitamines">Витамины</label>
+              <input class="feedback-form__checkbox" type="checkbox" id="additional-goods-vitamines" name="vitamines">
+          </ul>
+        </fieldset>
+
       </form>
 
 
