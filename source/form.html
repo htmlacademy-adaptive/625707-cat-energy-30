@@ -11,7 +11,7 @@
   </head>
 
   <body class="page__body">
-    <header class="main-header main-header--programm">
+    <header class="main-header main-header--form">
       <div class="main-header__wrapper">
         <a class="main-header__logo" href="index.html" aria-label="Логотип сайта Cat Energy">
           <img class="main-header__logo-image" src="images/logo-mobile.svg" alt="Логотип проекта">
@@ -76,17 +76,17 @@
           <ul class="options-form__list options-form-list">
             <li class="options-form-list__item">
               <label class="options-form__label-radio form-label-radio form-label" for="weightloss" name="program-options">Похудение</label>
-              <input class="options-form__radio" type="radio" id="weightloss" name="program-options" checked>
+              <input class="options-form__radio form-input-radio" type="radio" id="weightloss" name="program-options" checked>
             </li>
 
             <li class="options-form-list__item">
               <label class="options-form__label-radio form-label-radio form-label" for="weightgain" name="program-options">Набор массы</label>
-              <input class="options-form__radio" type="radio" id="weightgain" name="program-options">
+              <input class="options-form__radio form-input-radio" type="radio" id="weightgain" name="program-options">
             </li>
 
             <li class="options-form-list__item">
               <label class="options-form__label-radio form-label-radio form-label" for="needhelp">Не знаю (Нужен ваш совет)</label>
-              <input class="options-form__radio" type="radio" id="needhelp" name="program-options">
+              <input class="options-form__radio form-input-radio" type="radio" id="needhelp" name="program-options">
             </li>
           </ul>
         </fieldset>
@@ -107,7 +107,7 @@
           </ul>
         </fieldset>
 
-        <div class="feedback-form__additional-info additional-comment">
+        <div class="feedback-form__additional-comment additional-comment">
           <label class="additional-comment__legend form-heading" for="message">Комментарий</label>
           <div class="additional-comment__wrapper">
             <textarea class="additional-comment__textarea form-input" id="message" name="message"
@@ -121,28 +121,28 @@
 
           <ul class="additional-goods__list additional-goods-list">
             <li class="additional-goods-list__item">
-              <label class="feedback-form__label-checkbox form-label-checkbox form-label" for="additional-goods-sugarsubstitute">Сахарозаменитель</label>
-              <input class="feedback-form__checkbox" type="checkbox" id="additional-goods-sugarsubstitute" name="sugarsubstitute">
+              <label class="additional-goods__label-checkbox form-label-checkbox form-label" for="additional-goods-sugarsubstitute">Сахарозаменитель</label>
+              <input class="additional-goods__checkbox form-checkbox" type="checkbox" id="additional-goods-sugarsubstitute" name="sugarsubstitute">
             </li>
 
             <li class="additional-goods-list__item">
-              <label class="feedback-form__label-checkbox form-label-checkbox form-label" for="additional-goods-water">Питьевая вода</label>
-              <input class="feedback-form__checkbox" type="checkbox" id="additional-goods-water" name="water">
+              <label class="additional-goods__label-checkbox form-label-checkbox form-label" for="additional-goods-water">Питьевая вода</label>
+              <input class="additional-goods__checkbox form-checkbox" type="checkbox" id="additional-goods-water" name="water">
             </li>
 
             <li class="additional-goods-list__item">
-              <label class="feedback-form__label-checkbox form-label-checkbox form-label" for="additional-goods-milk">Молоко</label>
-              <input class="feedback-form__checkbox" type="checkbox" id="additional-goods-milk" name="milk">
+              <label class="additional-goods__label-checkbox form-label-checkbox form-label" for="additional-goods-milk">Молоко</label>
+              <input class="additional-goods__checkbox form-checkbox" type="checkbox" id="additional-goods-milk" name="milk">
             </li>
 
             <li class="additional-goods-list__item">
-              <label class="feedback-form__label-checkbox form-label-checkbox form-label" for="additional-goods-vitamines">Витамины</label>
-              <input class="feedback-form__checkbox" type="checkbox" id="additional-goods-vitamines" name="vitamines">
+              <label class="additional-goods__label-checkbox form-label-checkbox form-label" for="additional-goods-vitamines">Витамины</label>
+              <input class="additional-goods__checkbox form-checkbox" type="checkbox" id="additional-goods-vitamines" name="vitamines">
           </ul>
         </fieldset>
 
         <div class="feedback-form__submit-wrapper">
-          <button class="feedback-form__submit button button--primary" type="submit">Отправить</button>
+          <button class="feedback-form__submit button button--primary" type="submit">Отправить заявку</button>
           <p class="feedback-form__required">*Обязательные поля</p>
         </div>
       </form>
