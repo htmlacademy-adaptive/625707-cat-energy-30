@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Catalog</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/index.js" defer></script>
+  </head>
+  <body class="page__body">
+    <header class="main-header main-header--index">
+      <div class="main-header__wrapper">
+        <a class="main-header__logo" href="index.html" aria-label="Логотип сайта Cat Energy">
+          <img class="main-header__logo-image" src="images/logo-mobile.svg" alt="Логотип проекта">
+        </a>
+        <a class="main-header__title" href="index.html" aria-label="Название сайта Cat Energy">
+          <img class="main-header__title-image" src="images/logo-text.svg" alt="Название проекта">
+        </a>
+
+        <nav class="main-header__main-nav main-nav">
+          <button class="main-nav__toggle main-nav__toggle--off" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__list-item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__list-item main-nav__list-item--active">
+                <a class="main-nav__link" href="catalog.html">Каталог Продукции</a>
+              </li>
+              <li class="main-nav__list-item">
+                <a class="main-nav__link" href="about.html">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-continer">
+      <h1 class="visually-hidden">Каталог Продукции</h1>
+
+      <article class="catalog">
+        <h2 class="visually-hidden">Основные товары</h2>
+
+        <div class="catalog__wrapper">
+          <ul class="catalog__list">
+            <li class="catalog__item catalog-card">
+              <img class="catalog-card__image" src="images/catalog-img-1.jpg" alt="Фото продукта">
+              <b class="catalog__title">Cat Energy PRO 500 г</b>
+              <ul class="catalog-card__properties-list">
+                <li class="catalog-card__properties-item">
+                  <span class="catalog-card__properties-name">Масса</span>
+                  <span class="catalog-card__properties-value">500 г</span>
+                </li>
+                <li class="catalog-card__properties-item">
+                  <span class="catalog-card__properties-name">Вкус</span>
+                  <span class="catalog-card__properties-value">Курица</span>
+                </li>
+                <li class="catalog-card__properties-item">
+                  <span class="catalog-card__properties-name">Цена</span>
+                  <span class="catalog-card__properties-value">700 ₽</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button class="catalog-card__button button button__primary" type="button">Заказать</button>
+        </div>
+      </article>
+
+    </main>
+
+
+  </body>
+</html>
