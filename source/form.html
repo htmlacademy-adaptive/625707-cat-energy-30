@@ -11,7 +11,7 @@
   </head>
 
   <body class="page__body">
-    <header class="main-header main-header--form">
+    <header class="main-header main-header--index">
       <div class="main-header__wrapper">
         <a class="main-header__logo" href="index.html" aria-label="Логотип сайта Cat Energy">
           <img class="main-header__logo-image" width="33" height="38" src="images/logo-mobile.svg" alt="Логотип проекта">
@@ -19,21 +19,19 @@
         <a class="main-header__title" href="index.html" aria-label="Название сайта Cat Energy">
           <img class="main-header__title-image" width="101" height="18" src="images/logo-text.svg" alt="Название проекта">
         </a>
-
         <nav class="main-header__main-nav main-nav">
           <button class="main-nav__toggle main-nav__toggle--off" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__list-item">
-                <a class="main-nav__link" href="index.html">Главная</a>
+                <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
               </li>
               <li class="main-nav__list-item">
                 <a class="main-nav__link" href="catalog.html">Каталог Продукции</a>
               </li>
-              <li class="main-nav__list-item main-nav__list-item--active">
+              <li class="main-nav__list-item">
                 <a class="main-nav__link" href="form.html">Подбор программы</a>
               </li>
             </ul>
@@ -47,7 +45,7 @@
         <h1 class="catalog-header__title">Подбор программы</h1>
         <p class="catalog-header__subtitle">Заполните анкету и мы подберем программу питания для вашего кота</p>
       </div>
-      <form class="feedback-form" action="https://htmlacademy.ru/" method="post">
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="feedback-form__cat-info cat-info-form">
           <legend class="visually-hidden">Данные про кота</legend>
           <ul class="cat-info-form__list cat-info-form-list">
@@ -144,17 +142,17 @@
       </form>
 
     </main>
+
     <footer class="main-footer footer">
       <section class="contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <div class="contacts__wrapper">
-          <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__title">Приглашаем сотрудничеству дилеров!</p>
           <address class="contacts__adress">
             <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
             <span class="contacts__city">Санкт-Петербург</span>
           </address>
         </div>
-
         <div class="map">
           <div class="map__wrapper">
             <div class="map__image-wrapper">
@@ -163,13 +161,15 @@
           </div>
         </div>
       </section>
-
       <div class="main-footer__bottom footer-bottom">
         <div class="footer-bottom__wrapper">
-          <div class="footer__logo-wrapper">
+
+          <a class="footer__logo-wrapper" href="#">
             <img class="footer__logo-image" width="27" height="34" src="images/logo-text.svg" alt="Логотип название проекта">
-          </div>
-          <div class="socials">
+          </a>
+
+          <section class="socials">
+            <h2 class="visually-hidden">Социальные сети</h2>
             <div class="socials__wrapper">
               <ul class="socials__list">
                 <li class="socials__item">
@@ -183,7 +183,7 @@
                 </li>
               </ul>
             </div>
-          </div>
+          </section>
           <a class="footer-copyright copyright" href="https://htmlacademy.ru" aria-label="HTML Academy">
             <span class="copyright__text">HTML Academy</span>
             <img class="copyright__image" width="27" height="34" src="images/html-a.svg" alt="Логотип HTML Academy">
