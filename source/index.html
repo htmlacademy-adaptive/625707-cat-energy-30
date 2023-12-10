@@ -134,11 +134,29 @@
         <div class="example__slider slider">
           <div class="example__slider-images slider__images">
             <div class="slider__image-wrapper">
-              <img class="slider__image" width="280" height="256" alt="Фото кота до программы" src="images/cat-before.png">
+              <picture>
+                  <source type="image/png" media="(min-width: 768px)"
+                    srcset="images/main/cat-before@1x.png 1x,
+                            images/main/cat-before@2x.png 2x"
+                    width="560" height="512">
+                  <img class="slider__image"
+                    src="images/main//mobile-before@1x.png 1x"
+                    srcset="images/main//mobile-before@2x.png 2x"
+                    width="280" height="256" alt="Фото кота до программы">
+              </picture>
             </div>
 
             <div class="slider__image-wrapper">
-              <img class="slider__image" width="280" height="256" alt="Фото кота после программы" src="images/cat-after.png">
+              <picture>
+                <source type="image/png" media="(min-width: 768px)"
+                srcset="images/main/cat-after@1x.png 1x,
+                        images/main/cat-after@2x.png 2x"
+                width="560" height="512">
+                <img class="slider__image"
+                src="images/main//mobile-after@1x.png 1x"
+                srcset="images/main//mobile-after@2x.png 2x"
+                width="280" height="256" alt="Фото кота до программы">
+            </picture>
             </div>
           </div>
 
