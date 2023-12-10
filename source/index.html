@@ -156,7 +156,7 @@
                 src="images/main//mobile-after@1x.png 1x"
                 srcset="images/main//mobile-after@2x.png 2x"
                 width="280" height="256" alt="Фото кота до программы">
-            </picture>
+              </picture>
             </div>
           </div>
 
@@ -190,7 +190,21 @@
         <div class="footer-bottom__wrapper">
 
           <a class="footer__logo-wrapper" href="#">
-            <img class="footer__logo-image" width="27" height="34" src="images/logo-text.svg" alt="Логотип название проекта">
+            <picture>
+              <source type="image/png" media="(min-width: 1440px)"
+                srcset="images/main/map-desktop@1x.png 1x,
+                        images/main/map-desktop@2x.png 2x"
+                width="1440" height="400">
+                <source type="image/png" media="(min-width: 768px)"
+                srcset="images/main/map-tablet@1x.png 1x,
+                        images/main/map-tablet@2x.png 2x"
+                width="768" height="400">
+                <img class="footer__logo-image"
+                  src="images/main/map-mobile@1x.png 1x"
+                  srcset="images/main/map-mobile@2x.png 2x"
+                  width="320" height="368"
+                  alt="Карта с расположением проекта">
+            </picture>
           </a>
 
           <section class="socials">
