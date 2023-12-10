@@ -303,7 +303,21 @@
         <div class="map">
           <div class="map__wrapper">
             <div class="map__image-wrapper">
-              <img class="map__image" width="320" height="362" src="images/map.png" alt="Офис по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+              <picture>
+                <source type="image/png" media="(min-width: 1440px)"
+                  srcset="images/main/map-desktop@1x.png 1x,
+                          images/main/map-desktop@2x.png 2x"
+                  width="1440" height="400">
+                  <source type="image/png" media="(min-width: 768px)"
+                  srcset="images/main/map-tablet@1x.png 1x,
+                          images/main/map-tablet@2x.png 2x"
+                  width="768" height="400">
+                  <img class="footer__logo-image"
+                    src="images/main/map-mobile@1x.png"
+                    srcset="images/main/map-mobile@2x.png 2x"
+                    width="320" height="368"
+                    alt="Карта с расположением проекта">
+              </picture>
             </div>
           </div>
         </div>
