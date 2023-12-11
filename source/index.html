@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>Cat Energy: Главная</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/site.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer="defer"></script>
   </head>
@@ -42,7 +47,21 @@
         <div class="promo__wrapper">
           <h1 class="promo__title">Функциональное питание для котов</h1>
           <p class="promo__text">Занялся собой? Займись котом!</p>
-          <img class="promo__image" width="280" height="270" src="images/promo-img.png" alt="Кот">
+          <picture>
+            <source type="image/png" media="(min-width: 1440px)"
+              srcset="images/main/hero@1x.png 1x,
+                      images/main/hero@2x.png 2x"
+              width="552" height="449">
+              <source type="image/png" media="(min-width: 768px)"
+              srcset="images/main/hero-tablet@1x.png 1x,
+                      images/main/hero-tablet@2x.png 2x"
+              width="709" height="609">
+              <img class="promo__image"
+              src="images/main/hero-mobile@1x.png"
+              srcset="images/main/hero-mobile@2x.png 2x"
+              width="280" height="270"
+              alt="Упаковка корма для кота">
+          </picture>
           <a class="promo__link button" href="form.html">Подобрать программу</a>
         </div>
       </section>
@@ -115,11 +134,29 @@
         <div class="example__slider slider">
           <div class="example__slider-images slider__images">
             <div class="slider__image-wrapper">
-              <img class="slider__image" width="280" height="256" alt="Фото кота до программы" src="images/cat-before.png">
+              <picture>
+                  <source type="image/png" media="(min-width: 768px)"
+                    srcset="images/main/cat-before@1x.png 1x,
+                            images/main/cat-before@2x.png 2x"
+                    width="560" height="512">
+                  <img class="slider__image"
+                    src="images/main/mobile-before@1x.png"
+                    srcset="images/main/mobile-before@2x.png 2x"
+                    width="280" height="256" alt="Фото кота до программы">
+              </picture>
             </div>
 
             <div class="slider__image-wrapper">
-              <img class="slider__image" width="280" height="256" alt="Фото кота после программы" src="images/cat-after.png">
+              <picture>
+                <source type="image/png" media="(min-width: 768px)"
+                srcset="images/main/cat-after@1x.png 1x,
+                        images/main/cat-after@2x.png 2x"
+                width="560" height="512">
+                <img class="slider__image"
+                src="images/main/mobile-after@1x.png"
+                srcset="images/main/mobile-after@2x.png 2x"
+                width="280" height="256" alt="Фото кота до программы">
+              </picture>
             </div>
           </div>
 
@@ -144,7 +181,21 @@
         <div class="map">
           <div class="map__wrapper">
             <div class="map__image-wrapper">
-              <img class="map__image" width="320" height="362" src="images/map.png" alt="Офис по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+              <picture>
+                <source type="image/png" media="(min-width: 1440px)"
+                  srcset="images/main/map-desktop@1x.png 1x,
+                          images/main/map-desktop@2x.png 2x"
+                  width="1440" height="400">
+                  <source type="image/png" media="(min-width: 768px)"
+                  srcset="images/main/map-tablet@1x.png 1x,
+                          images/main/map-tablet@2x.png 2x"
+                  width="768" height="400">
+                  <img class="footer__logo-image"
+                    src="images/main/map-mobile@1x.png"
+                    srcset="images/main/map-mobile@2x.png 2x"
+                    width="320" height="368"
+                    alt="Карта с расположением проекта">
+              </picture>
             </div>
           </div>
         </div>
