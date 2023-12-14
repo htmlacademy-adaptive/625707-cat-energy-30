@@ -1,9 +1,11 @@
 /* GLOBAL */
 @import "./global/variables.scss";
-@import "./global/global.scss";
+@import "./global/mixins.scss";
 @import "./global/fonts.scss";
-
+@import "./global/global.scss";
+@import "./global//visually-hidden.scss";
 /* ./blocks */
+@import "./blocks/button.scss";
 @import "./blocks/header.scss";
 @import "./blocks/additional-card.scss";
 @import "./blocks/additional-catalog.scss";

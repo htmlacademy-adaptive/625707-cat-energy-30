@@ -1,4 +1,12 @@
-// SCSS styles for order-promo
 .order-promo {
-    // Your styles here
+  background-color: #68B738D9;
+
+  &__text {
+    color: $basic-white;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 20px;
+
+  }
 }

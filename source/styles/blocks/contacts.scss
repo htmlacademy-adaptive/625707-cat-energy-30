@@ -1,4 +1,17 @@
-// SCSS styles for contacts
 .contacts {
-    // Your styles here
+
+  &__title {
+    color: $dark-grey;
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  &__adress {
+    font-size: 14px;
+    line-height: 20px;
+    color: $special-dark-grey;
+    font-style: normal;
+  }
 }

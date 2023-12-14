@@ -1,4 +1,20 @@
-// SCSS styles for products-more
 .products-more {
-    // Your styles here
+
+  &__title {
+    color: $dark-grey;
+    text-align: center;
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 16px;
+    font-style: normal;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    color: $special-dark-grey;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 16px;
+  }
 }

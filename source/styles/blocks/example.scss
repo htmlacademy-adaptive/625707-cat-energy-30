@@ -1,4 +1,22 @@
-// SCSS styles for example
 .example {
-    // Your styles here
+
+  &__title {
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 18px;
+    color: $special-dark-grey;
+  }
+
+  &__price {
+    font-family: 'Oswald', 'sans-serif';
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
 }
