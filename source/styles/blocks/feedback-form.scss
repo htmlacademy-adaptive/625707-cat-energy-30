@@ -1,4 +1,8 @@
-// SCSS styles for feedback-form
 .feedback-form {
-  // Your styles here
+  &__required {
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 16px;
+  }
 }
