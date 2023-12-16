@@ -1,0 +1,16 @@
+.card-product {
+  &__title {
+    font-family: "Oswald", sans-serif;
+    color: $special-dark-grey-2;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    color: $special-dark-grey;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
